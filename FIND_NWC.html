@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<h1 style="text-align:center;">
+Find NWC Faculty Staff Room
+<style>
+img{
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+</style>
+</h1>
+<img src="https://d23qowwaqkh3fj.cloudfront.net/wp-content/uploads/2022/01/srm-logo.svg" align="middle" style="width:200px;height:200px;">
+<body>
+<div align="center">
+<label style="font-size:30px;" for="cars">Select Faculty Name:</label>
+<select id="f_name" style="width:150px;height:30px;" onchange="find_faculty()">
+<option value="Empty">Select</option>  
+<option value="Dr. N Prasath">Dr. N Prasath</option>
+<option value="Mr. K.Manikandan">Mr. K.Manikandan</option>
+<option value="Dr. Murugaanandam S">Dr. Murugaanandam S</option>
+<option value="Mrs. D.Saveetha">Mrs. D.Saveetha</option>
+<option value="Mrs. G. Geetha">Mrs. G. Geetha</option>
+<option value="Dr. P. Balamurugan">Dr. P. Balamurugan</option>
+<option value="Mrs. Meenakshi K">Mrs. Meenakshi K</option>
+<option value="Mrs. M.Safa">Mrs. M.Safa</option>
+<option value="Dr. K Deepa Thilak">Dr. K Deepa Thilak</option>
+<option value="Dr.K.Kalaiselvi">Dr.K.Kalaiselvi</option>
+<option value="Dr. B. Yamini">Dr. B. Yamini</option>
+<option value="Dr. V.Hemamalini">Dr. V.Hemamalini</option>
+<option value="Dr. V.R.Balasaraswathi">Dr. V.R.Balasaraswathi</option>
+<option value="Dr.M.Shobana">Dr.M.Shobana</option>
+<option value="Dr.M.Jeyaselvi">Dr.M.Jeyaselvi</option>
+<option value="Dr.R.Radhika">Dr.R.Radhika</option>
+<option value="Dr.N.Senthamarai">Dr.N.Senthamarai</option>
+<option value="Dr. Kayalvizhi Jayavel">Dr. Kayalvizhi Jayavel</option>
+<option value="Dr.L.N.B.Srinivas">Dr.L.N.B.Srinivas</option>
+<option value="Dr.K.Venkatesh">Dr.K.Venkatesh</option>
+<option value="Ms.G.Sujatha">Ms.G.Sujatha</option>
+<option value="Dr.P.Visalakshi">Dr.P.Visalakshi</option>
+<option value="Dr.V. Elizabeth Jesi">Dr.V. Elizabeth Jesi</option>
+<option value="Dr.Mary Subaja Christo">Dr.Mary Subaja Christo</option>
+<option value="Mrs. G.Parimala">Mrs. G.Parimala</option>
+<option value="Dr.S.Thanga Revathi">Dr.S.Thanga Revathi</option>
+<option value="Dr.Mukesh Krishnan">Dr.Mukesh Krishnan</option>
+<option value="Dr.Vigneshwaran P">Dr.Vigneshwaran P</option>
+<option value="Dr.N.Krishnaraj">Dr.N.Krishnaraj</option>
+<option value="Mr. H. Karthikeyan ">Mr. H. Karthikeyan </option>
+<option value="Dr. M.Anand">Dr. M.Anand</option>
+<option value="Dr. Savaridassan P">Dr. Savaridassan P</option>
+<option value="Dr. C.Fancy">Dr. C.Fancy</option>
+<option value="Mr. V Joseph Raymond">Mr. V Joseph Raymond</option>
+<option value="Mr. V.Nallarasan">Mr. V.Nallarasan</option>
+<option value="Mr. Prabakaran J">Mr. Prabakaran J</option>
+<option value="Dr. Arun.A">Dr. Arun.A</option>
+<option value="Dr. M .Manickam">Dr. M .Manickam</option>
+<option value="Dr. R. Lakshminarayanan">Dr. R. Lakshminarayanan</option>
+<option value="Dr.M.Thenmozhi">Dr.M.Thenmozhi</option>
+<option value="Dr. S. Metilda Florence">Dr. S. Metilda Florence</option>
+<option value="Dr. Nimala.K">Dr. Nimala.K</option>
+<option value="Mrs. Lavanya V">Mrs. Lavanya V</option>
+<option value="Dr.M.Saravanan">Dr.M.Saravanan</option>
+<option value="Dr. S. Prabakeran">Dr. S. Prabakeran</option>
+<option value="Dr G Suseela">Dr G Suseela</option>
+<option value="Dr. A. Vijay Vasanth">Dr. A. Vijay Vasanth</option>
+<option value="Dr. P. Supraja">Dr. P. Supraja</option>
+<option value="Dr. V.M. Gayathri">Dr. V.M. Gayathri</option>
+<option value="Mrs. Saisanthiya">Mrs. Saisanthiya</option>
+<option value="Mrs. V.Vijayalakshmi">Mrs. V.Vijayalakshmi</option>
+<option value="Dr. A. Helen Victoria">Dr. A. Helen Victoria</option>
+<option value="Mrs. G Divya">Mrs. G Divya</option>
+<option value="Dr.R.Naresh">Dr.R.Naresh</option>
+<option value="Mr. K Senthil Kumar">Mr. K Senthil Kumar</option>
+<option value="Dr. J Godwin Ponsam">Dr. J Godwin Ponsam</option>
+<option value="Dr.C.N.S.Vinoth Kumar">Dr.C.N.S.Vinoth Kumar</option>
+<option value="Dr. Gouthaman.P">Dr. Gouthaman.P</option>
+<option value="Dr. P. Balaji Srikaanth">Dr. P. Balaji Srikaanth</option>
+<option value="Dr. V. Anbarasu">Dr. V. Anbarasu</option>
+<option value="Dr. A. Suresh">Dr. A. Suresh</option>
+<option value="Dr.V.Rajaram">Dr.V.Rajaram</option>
+<option value="Dr.V.Pandimurugan">Dr.V.Pandimurugan</option>
+<option value="Mrs. G.Saranya">Mrs. G.Saranya</option>
+<option value="Dr.Angayarkanni">Dr.Angayarkanni</option>
+<option value="Dr.Malathy">Dr.Malathy</option>
+<option value="Mr. T.Balachander">Mr. T.Balachander</option>
+<option value="Dr. C. Rajesh Babu">Dr. C. Rajesh Babu</option>
+<option value="Dr. Vaishnavi Moorthy">Dr. Vaishnavi Moorthy</option>
+<option value="Dr.Kayalvizhi R">Dr.Kayalvizhi R</option>
+<option value="Dr.Praveena Akki">Dr.Praveena Akki</option>
+<option value="Dr.Varunkumar">Dr.Varunkumar</option>
+<option value="Dr. S. Thenmalar">Dr. S. Thenmalar</option>
+<option value="Dr.TYJ Naga Malleswari">Dr.TYJ Naga Malleswari</option>
+<option value="Dr. Ushasukhanya S">Dr. Ushasukhanya S</option>
+<option value="Ms. Mahalakshmi.P">Ms. Mahalakshmi.P</option>
+<option value="Dr.Sivanesan">Dr.Sivanesan</option>
+</select>
+<p id="at"></p>
+</div>
+<script>
+function find_faculty(){var dict={"Dr. N Prasath":"TP203A","Mr. K.Manikandan":"TP203A","Dr. Murugaanandam S":"TP203A","Mrs. D.Saveetha":"TP203A","Mrs. G. Geetha":"TP203A","Dr. P. Balamurugan":"TP206A","Mrs. Meenakshi K":"TP206A","Mrs. M.Safa":"TP206A","Dr. K Deepa Thilak":"TP206A","Dr.K.Kalaiselvi":"TP206A","Dr. B. Yamini":"TP206A","Dr. V.Hemamalini":"TP209","Dr. V.R.Balasaraswathi":"TP209","Dr.M.Shobana":"TP209","Dr.M.Jeyaselvi":"TP209","Dr.R.Radhika":"TP209","Dr.N.Senthamarai":"TP209","Dr. Kayalvizhi Jayavel":"TP303A","Dr.L.N.B.Srinivas":"TP303A","Dr.K.Venkatesh":"TP303A","Ms.G.Sujatha":"TP303A","Dr.P.Visalakshi":"TP306A","Dr.V. Elizabeth Jesi":"TP306A","Dr.Mary Subaja Christo":"TP306A","Mrs. G.Parimala":"TP306A","Dr.S.Thanga Revathi":"TP306A","Dr.Mukesh Krishnan":"TP309","Dr.Vigneshwaran P":"TP403A","Dr.N.Krishnaraj":"TP403A","Mr. H. Karthikeyan ":"TP403A","Dr. M.Anand":"TP403A","Dr. Savaridassan P":"TP403A","Dr. C.Fancy":"TP403A","Mr. V Joseph Raymond":"TP406A","Mr. V.Nallarasan":"TP406A","Mr. Prabakaran J":"TP406A","Dr. Arun.A":"TP406A","Dr. M .Manickam":"TP406A","Dr. R. Lakshminarayanan":"TP406A","Dr.M.Thenmozhi":"TP503A","Dr. S. Metilda Florence":"TP503A","Dr. Nimala.K":"TP503A","Mrs. Lavanya V":"TP503A","Dr.M.Saravanan":"TP506A","Dr. S. Prabakeran":"TP506A","Dr G Suseela":"TP506A","Dr. A. Vijay Vasanth":"TP506A","Dr. P. Supraja":"TP509","Dr. V.M. Gayathri":"TP509","Mrs. Saisanthiya":"TP509","Mrs. V.Vijayalakshmi":"TP509","Dr. A. Helen Victoria":"TP509","Mrs. G Divya":"TP509","Dr.R.Naresh":"TP511","Mr. K Senthil Kumar":"TP511","Dr. J Godwin Ponsam":"TP511","Dr.C.N.S.Vinoth Kumar":"TP512","Dr. Gouthaman.P":"TP512","Dr. P. Balaji Srikaanth":"TP512","Dr. V. Anbarasu":"TP1503A","Dr. A. Suresh":"TP1503A","Dr.V.Rajaram":"TP1503A","Dr.V.Pandimurugan":"TP1503A","Mrs. G.Saranya":"TP1503A","Dr.Angayarkanni":"TP1503A","Dr.Malathy":"TP1310","Mr. T.Balachander":"TP1506A","Dr. C. Rajesh Babu":"TP1506A","Dr. Vaishnavi Moorthy":"TP1506A","Dr.Kayalvizhi R":"TP1506A","Dr.Praveena Akki":"TP1506A","Dr.Varunkumar":"TP1506A","Dr. S. Thenmalar":"TP1512","Dr.TYJ Naga Malleswari":"TP1512","Dr. Ushasukhanya S":"TP1512","Ms. Mahalakshmi.P":"TP1512","Dr.Sivanesan":"TP1512"};
+if(document.getElementById('f_name').value=="Empty")
+alert("Please Select Faculty Name!");
+else{
+var x=document.getElementById('f_name').value;
+document.getElementById('at').innerHTML=x+" is available at : "+dict[x];
+}}</script>
+<p align="right">Developed By: Sooraj Tomar</p>
+</body>
+</html>
